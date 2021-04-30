@@ -1,7 +1,7 @@
 ﻿
 namespace Hamburger
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,9 @@ namespace Hamburger
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.siparişYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.siparişOluşturToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.siparişBilgileriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderManegementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productManagmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addHamburgerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addExtraMaterialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +42,7 @@ namespace Hamburger
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.siparişYönetimiToolStripMenuItem,
+            this.orderManegementToolStripMenuItem,
             this.productManagmentToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -50,26 +50,26 @@ namespace Hamburger
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // siparişYönetimiToolStripMenuItem
+            // orderManegementToolStripMenuItem
             // 
-            this.siparişYönetimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.siparişOluşturToolStripMenuItem,
-            this.siparişBilgileriToolStripMenuItem});
-            this.siparişYönetimiToolStripMenuItem.Name = "siparişYönetimiToolStripMenuItem";
-            this.siparişYönetimiToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
-            this.siparişYönetimiToolStripMenuItem.Text = "Order Manegement";
+            this.orderManegementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createOrderToolStripMenuItem,
+            this.orderDetailToolStripMenuItem});
+            this.orderManegementToolStripMenuItem.Name = "orderManegementToolStripMenuItem";
+            this.orderManegementToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.orderManegementToolStripMenuItem.Text = "Order Manegement";
             // 
-            // siparişOluşturToolStripMenuItem
+            // createOrderToolStripMenuItem
             // 
-            this.siparişOluşturToolStripMenuItem.Name = "siparişOluşturToolStripMenuItem";
-            this.siparişOluşturToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.siparişOluşturToolStripMenuItem.Text = "Create Order";
+            this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
+            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createOrderToolStripMenuItem.Text = "Create Order";
             // 
-            // siparişBilgileriToolStripMenuItem
+            // orderDetailToolStripMenuItem
             // 
-            this.siparişBilgileriToolStripMenuItem.Name = "siparişBilgileriToolStripMenuItem";
-            this.siparişBilgileriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.siparişBilgileriToolStripMenuItem.Text = "Order Detail";
+            this.orderDetailToolStripMenuItem.Name = "orderDetailToolStripMenuItem";
+            this.orderDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orderDetailToolStripMenuItem.Text = "Order Detail";
             // 
             // productManagmentToolStripMenuItem
             // 
@@ -114,9 +114,9 @@ namespace Hamburger
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem siparişYönetimiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem siparişOluşturToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem siparişBilgileriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderManegementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createOrderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productManagmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addHamburgerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addExtraMaterialToolStripMenuItem;

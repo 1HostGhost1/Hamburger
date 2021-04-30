@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hamburger
 {
-    public partial class Form1 : Form
+    public partial class CreateOrderForm : Form
     {
-        public Form1()
+        public CreateOrderForm()
         {
             InitializeComponent();
         }
