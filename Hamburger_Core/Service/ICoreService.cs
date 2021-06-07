@@ -10,13 +10,18 @@ namespace Hamburger_Core.Service
 {
     public interface ICoreService<T> where T : CoreEntity
     {
-        List<T> GetActives();
-        List<T> GetDefault(Expression<Func<T, bool>> predicate);
-        T GetByDefault(Expression<Func<T, bool>> predicate);
-        T GetById(int id);
-        T Add(T item);
-        T Update(T item);
-        T Remove(int id);
-        T Remove(T item);
+        IQueryable<T> Table { get; }
+        IQueryable<T> TableNoTracking { get; }
+        Task<T> Add(T item);
+        Task<T> Update(T item);
+        Task<bool> Remove(int id);
+        Task<bool> Remove(T item);
+        IQueryable<T> GetActives();
+        Task<T> GetById(int id, params Expression<Func<T, object>>[] includeParameters);
+        Task<T> GetByDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters);
+        IQueryable<T> GetDefault(Expression<Func<T, bool>> exp, params Expression<Func<T, object>>[] includeParameters);
+        Task<bool> Activate(int id);
+        Task<bool> Any(Expression<Func<T, bool>> exp);
+        Task<int> Save();
     }
 }

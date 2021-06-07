@@ -62,14 +62,16 @@ namespace Hamburger
             // createOrderToolStripMenuItem
             // 
             this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
-            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.createOrderToolStripMenuItem.Text = "Create Order";
+            this.createOrderToolStripMenuItem.Click += new System.EventHandler(this.createOrderToolStripMenuItem_Click);
             // 
             // orderDetailToolStripMenuItem
             // 
             this.orderDetailToolStripMenuItem.Name = "orderDetailToolStripMenuItem";
-            this.orderDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orderDetailToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.orderDetailToolStripMenuItem.Text = "Order Detail";
+            this.orderDetailToolStripMenuItem.Click += new System.EventHandler(this.orderDetailToolStripMenuItem_Click);
             // 
             // productManagmentToolStripMenuItem
             // 
@@ -83,16 +85,18 @@ namespace Hamburger
             // addHamburgerToolStripMenuItem
             // 
             this.addHamburgerToolStripMenuItem.Name = "addHamburgerToolStripMenuItem";
-            this.addHamburgerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addHamburgerToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.addHamburgerToolStripMenuItem.Text = "Add Hamburger";
+            this.addHamburgerToolStripMenuItem.Click += new System.EventHandler(this.addHamburgerToolStripMenuItem_Click);
             // 
             // addExtraMaterialToolStripMenuItem
             // 
             this.addExtraMaterialToolStripMenuItem.Name = "addExtraMaterialToolStripMenuItem";
-            this.addExtraMaterialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addExtraMaterialToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.addExtraMaterialToolStripMenuItem.Text = "Add Extra Material";
+            this.addExtraMaterialToolStripMenuItem.Click += new System.EventHandler(this.addExtraMaterialToolStripMenuItem_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +106,7 @@ namespace Hamburger
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

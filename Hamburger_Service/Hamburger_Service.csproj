@@ -52,11 +52,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Base\BaseService.cs" />
+    <Compile Include="Service\ExtraService\ExtraService.cs" />
+    <Compile Include="Service\ExtraService\IExtraService.cs" />
+    <Compile Include="Service\ExtraToOrderService\ExtraToOrderService.cs" />
+    <Compile Include="Service\ExtraToOrderService\IExtraToOrderService.cs" />
+    <Compile Include="Service\MenuService\IMenuService.cs" />
+    <Compile Include="Service\MenuService\MenuService.cs" />
+    <Compile Include="Service\OrderService\IOrderService.cs" />
+    <Compile Include="Service\OrderService\OrderService.cs" />
+    <Compile Include="Service\SingletonPattern\Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hamburger_Core\Hamburger_Core.csproj">
+      <Project>{a2c1937a-24cd-45b4-9a1b-ec372d6d398b}</Project>
+      <Name>Hamburger_Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hamburger_Model\Hamburger_Model.csproj">
+      <Project>{6bd4756a-884d-47ec-b391-c81f5be06d95}</Project>
+      <Name>Hamburger_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -51,7 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\DataContext.cs" />
+    <Compile Include="Entity\Enums\Size.cs" />
+    <Compile Include="Entity\Extra.cs" />
+    <Compile Include="Entity\ExtraToOrder.cs" />
+    <Compile Include="Entity\Menu.cs" />
     <Compile Include="Entity\Order.cs" />
+    <Compile Include="Map\ExtraMap.cs" />
+    <Compile Include="Map\ExtraToOrderMap.cs" />
+    <Compile Include="Map\MenuMap.cs" />
+    <Compile Include="Map\OrderMap.cs" />
+    <Compile Include="Migrations\202105012029043_Init.cs" />
+    <Compile Include="Migrations\202105012029043_Init.designer.cs">
+      <DependentUpon>202105012029043_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105032001353_intToDecimalForPrice.cs" />
+    <Compile Include="Migrations\202105032001353_intToDecimalForPrice.designer.cs">
+      <DependentUpon>202105032001353_intToDecimalForPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +81,14 @@
       <Project>{a2c1937a-24cd-45b4-9a1b-ec372d6d398b}</Project>
       <Name>Hamburger_Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105012029043_Init.resx">
+      <DependentUpon>202105012029043_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105032001353_intToDecimalForPrice.resx">
+      <DependentUpon>202105032001353_intToDecimalForPrice.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
